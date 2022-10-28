@@ -2,12 +2,17 @@
 	
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+
+
+}
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 body{
   font-family: 'open sans';
-  background-color: white ;
+
 }
 
 /*
@@ -44,9 +49,11 @@ nav{
   display: flex;
   justify-content: flex-end;
   height: 50px;
-  align-items: center;
+  
   font-weight: 700;
   font-size: 18px;
+  text-align: right;
+  padding: 30px 50px 0 0;
 
 }
 
@@ -87,7 +94,7 @@ header .th{
     display: flex;
     height: 400px;
     width: 100%;
-    align-items: right;
+    
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -130,8 +137,8 @@ main .sobre-nosotros{
 }
 
 .imagen-about-us{
-    width: 40%;
-    height: 70%;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-left: 33%;
     margin-right: 33%;
@@ -192,23 +199,33 @@ box-shadow: 3px 3px #EEEEEE, -1em 0 0.4em #EEEEEE;
 Estudios*/
 .clientes-contenedor{
   background-color: #EEEEEE;
-  height: 350px;
+  height: 60%px;
+
 }
 .cards{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 50px;
-    
+    align-items: center;
+     padding-top: 50px;
+    padding-bottom: 50px;
+    column-gap: 10px;
+    flex: 1;
+    flex-basis: auto;
+
 }
 
 .cards .card{
+  flex: 1;
     background: #D8D2CB;
     display: flex;
     width: 40%;
-    height: 150px;
+    height: 60%;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 10px;
+    padding: 50px 50px 50px 50px;
+    flex-basis: auto;
+    
     
 }
 
@@ -245,6 +262,7 @@ lenguajes*/
 
 .contenedor-know .know{
   background-color: white ;
+
 }
 .contenedor-know{
     display: flex;
@@ -252,7 +270,7 @@ lenguajes*/
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    
+    column-gap: 10px;
 
     
 }
@@ -281,7 +299,8 @@ td{
 */
 .proyectos{
    background-color: #EEEEEE;
-  height: 400px;
+  height: 60%;
+  margin-bottom: 10px;
 
 }
 .containervideo{
@@ -290,6 +309,7 @@ td{
     grid-row-gap: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
+    align-items: center;
 
 
 }
@@ -327,17 +347,19 @@ form{
   padding-bottom: 20px;
   padding-bottom: 20px;
 }
-form  input{
+form > input{
   width: 200px;
   height: 25px;
   color: gray;
-
+  font-size: 15px;
+  padding: 15px 15px 15px 15px;
 
 }
 
 div > input{
   width: 100px;
   height: 23px;
+  font-size: 15px;
   
 }
 
@@ -352,6 +374,45 @@ div > input{
     margin: 20px 0 0 0;
     color: black;
 }
-form input{
-  margin: auto;
+
+
+/*
+responsive*/
+@media screen and (max-width: 650px){
+  
+
+   .sobre-nosotros {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex-basis: auto;
+    }
+    .cards {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex-basis: auto;
+        column-gap: 10px;
+    }
+   .contenedor-know  {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex-basis: auto;
+    }
+    .containervideo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex-basis: auto;
+        column-gap: 10px;
+    }
+    .contenedor-footer
+    {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex-basis: auto;
+    }
+
 }
