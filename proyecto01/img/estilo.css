@@ -1,0 +1,357 @@
+*{
+	
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'open sans';
+  background-color: white ;
+}
+
+/*
+header
+*/
+header{
+  /*
+  background:#F8F8FF;
+  height: 700px;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  line-height: 100px;
+  color: black;
+  border-bottom: 5px black;*/
+    width: 100%;
+    height: 450px;
+    /*background-image: url("portada.jpg");*/
+    /*background: linear-gradient(to right, hsla(11,61%,49%, 2), hsla(11,61%,49%, 2));
+    */background-color: #398AB9;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav ul li{
+  float: left;
+  list-style: none;
+  margin: 5px;
+}
+
+nav{
+  
+ /* background-color: white;*/
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+
+}
+
+.navitem{
+  color: black;
+
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 10px 15px;
+  
+}
+.navcto{
+  border: 1px solid black;
+  border-spacing: 30;
+}
+
+
+header li a:hover{
+    /*text-decoration: underline;
+    /*background-color: lightblue;
+    border-radius: 60%;*/
+    color: white;
+
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+
+}
+/*
+Joss
+*/
+header .th{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    align-items: right;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+.titulo {
+    color:  #1C658C;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10pz;
+    padding-top: 18px;
+
+}
+
+
+.th h1{
+    font-size: 50px;
+    color:black;
+}
+
+.th h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:black;
+}
+
+main .sobre-nosotros{
+    padding: 30px 60px 60px 60px;
+   /* background-color: #2D4263;*/
+
+}
+.sobre-nosotros{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 10px;
+
+
+}
+
+.imagen-about-us{
+    width: 40%;
+    height: 70%;
+    border-radius: 50%;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-bottom: 3%;
+   
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 90%;
+    height: 100%;
+    padding: 50px 50px 50px 50px;
+    background-color: #D8D2CB;
+    border-radius: 5%;
+    /* Any number of shadows, separated by commas */
+box-shadow: 3px 3px #EEEEEE, -1em 0 0.4em #EEEEEE;
+
+
+}
+.contenido-textos h3{
+    margin-bottom: 5px;
+    color: #2D4263;
+
+}
+
+
+
+.contenido-textos p{
+    padding: 0px 0px 10px 30px;
+    font-weight: 300;
+    text-align: left;
+}
+.fotos{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    
+   
+}
+.ill{
+  width: 13%;
+  
+}
+.ill > img {
+ 
+  
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10%;
+  border-radius: 50%;
+
+}
+
+
+
+/*
+Estudios*/
+.clientes-contenedor{
+  background-color: #EEEEEE;
+  height: 350px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    
+}
+
+.cards .card{
+    background: #D8D2CB;
+    display: flex;
+    width: 40%;
+    height: 150px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    
+}
+
+.cards .card img{
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 40%;
+    border: 2px solid black;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 50%;
+    color: black;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cards .card > .contenido-texto-card h3{
+    border-bottom: 1px solid  black ;
+}
+
+
+
+/*
+lenguajes*/
+
+
+.contenedor-know .know{
+  background-color: white ;
+}
+.contenedor-know{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+
+    
+}
+
+/*tabla
+*/
+table{
+  border-collapse: separate;
+
+
+  width: 100%;
+}
+table caption{
+  text-align: center;
+}
+table tr:nth-child(1) {
+  
+  background-color: #D8D2CB;
+}
+td{
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+}
+
+/*proyectos
+*/
+.proyectos{
+   background-color: #EEEEEE;
+  height: 400px;
+
+}
+.containervideo{
+  display: flex;
+    justify-content: space-evenly;
+    grid-row-gap: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+}
+video{
+  width: 300px;
+  height: 200px ;
+  
+}
+
+/*footer*/
+footer{
+    background: #398AB9;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+}
+
+.content-foo{
+    text-align: center;
+
+   
+}
+form{
+  text-align: left;
+  padding-bottom: 20px;
+  padding-bottom: 20px;
+}
+form  input{
+  width: 200px;
+  height: 25px;
+  color: gray;
+
+
+}
+
+div > input{
+  width: 100px;
+  height: 23px;
+  
+}
+
+.contenedor-footer .content-foo iframe{
+    width: 400px;
+    height:200px;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: black;
+}
+form input{
+  margin: auto;
+}
