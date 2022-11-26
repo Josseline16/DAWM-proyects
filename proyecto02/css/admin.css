@@ -19,6 +19,24 @@ body {
   z-index: 600;
 }
 
+.btn{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+#myChart2{
+  height: 300px;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+body > .mb-4{
+  margin-top: 100px;
+
+  margin-bottom: 50px;
+}
+
 @media (max-width: 991.98px) {
   .sidebar {
     width: 100%;

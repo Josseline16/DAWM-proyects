@@ -177,15 +177,15 @@ let cargarGeneros = () => {
       fetch(urlpp)
           .then(response => response.json())
           .then(data1 => {
-              let select = document.getElementsByClassName('custom-select');
+              let select = document.getElementsByClassName('custom-select')[0];
               
               for(let i=0;i<data1.genres.length;i++){
                   
-                  console.log('hola');
+                  console.log(data1.genres[i].id);
                   let option = document.createElement("option")
 
                   
-                  option.setAttribute("id", data1.genres[i].id);
+                  option.setAttribute("value", data1.genres[i].id);
                   option.innerHTML = data1.genres[i].name;
                   select.appendChild(option);
               };
