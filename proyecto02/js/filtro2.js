@@ -99,7 +99,7 @@
               display: false,
             },
           },
-        });    
+        });     
           }).catch(console.error);
 
 
