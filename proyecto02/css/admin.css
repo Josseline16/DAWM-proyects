@@ -1,6 +1,11 @@
 body {
   background-color: #fbfbfb;
 }
+h5{
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+  animation-iteration-count: infinite;
+}
 @media (min-width: 991.98px) {
   main {
     padding-left: 240px;
