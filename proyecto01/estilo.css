@@ -629,6 +629,10 @@ form input[type="button"]{
 /*
 responsive*/
 @media screen and (max-width: 800px){
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
   .sobre-nosotros .contenido-textos{
     width: 100%;
     
